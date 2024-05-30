@@ -1,0 +1,32 @@
+export const contactsGridTemplateLargeScreens = `
+  "a a"
+  "b c"
+  "b c"
+  "b c"
+  "b c"
+  "d e"
+  "d e"
+  "d e"
+  "d e"
+  "d e"
+`;
+
+export const contactsGridTemplateSmallScreens = `
+  "a"
+  "b"
+  "b"
+  "b"
+  "b"
+  "c"
+  "c"
+  "c"
+  "c"
+  "d"
+  "d"
+  "d"
+  "d"
+  "e"
+  "e"
+  "e"
+  "e"
+`;
