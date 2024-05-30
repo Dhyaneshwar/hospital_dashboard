@@ -1,9 +1,7 @@
-import { Box, Typography, useTheme } from "@mui/material";
-import React from "react";
+import { Box, Typography } from "@mui/material";
 import FlexBetween from "./FlexBetween";
 
-const BoxHeader = ({ title, subtitle, sideText }) => {
-    const { palette } = useTheme();
+const BoxHeader = ({ title, subtitle }) => {
     return (
         <FlexBetween p="5px">
             <Box m="5px auto 1px auto">
@@ -11,7 +9,7 @@ const BoxHeader = ({ title, subtitle, sideText }) => {
                     variant="h4"
                     fontSize="16px"
                     fontWeight="500"
-                    color={palette.secondary[500]}
+                    color="#f2b455"
                 >
                     {title}
                 </Typography>
