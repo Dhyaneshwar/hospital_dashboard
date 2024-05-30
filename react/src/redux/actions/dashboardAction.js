@@ -1,9 +1,17 @@
-export const DASHBOARD_ACTION_TYPE = "DASHBOARD_ACTION_TYPE";
+export const REQUEST_DASHBOARD_DATA_TYPE = "REQUEST_DASHBOARD_DATA_TYPE";
+export const RESPONSE_DASHBOARD_DATA_TYPE = "RESPONSE_DASHBOARD_DATA_TYPE";
 export const RESET_DASHBOARD_ACTION_TYPE = "RESET_DASHBOARD_ACTION_TYPE";
 
-export const dashboardAction = (payload) => {
+export const requestDashboardAction = (payload) => {
     return {
-        type: DASHBOARD_ACTION_TYPE,
+        type: REQUEST_DASHBOARD_DATA_TYPE,
+        payload,
+    };
+};
+
+export const responseDashboardAction = (payload) => {
+    return {
+        type: RESPONSE_DASHBOARD_DATA_TYPE,
         payload,
     };
 };

@@ -6,12 +6,10 @@ const axiosClient = axios.create({
 
 axiosClient.interceptors.response.use(
     (response) => {
-        console.log(response);
-        return response;
+        return response.data;
     },
     (error) => {
         const { response } = error;
-        console.log(response);
         throw error;
     }
 );

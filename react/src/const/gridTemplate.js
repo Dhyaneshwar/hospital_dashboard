@@ -4,7 +4,7 @@ export const contactsGridTemplateLargeScreens = `
   "b c"
   "b c"
   "b c"
-  "d e"
+  "d c"
   "d e"
   "d e"
   "d e"

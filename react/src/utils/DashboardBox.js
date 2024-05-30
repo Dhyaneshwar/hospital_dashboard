@@ -8,7 +8,7 @@ const DashboardBox = styled(Box)(({ theme, bgcolor, trn }) => ({
     transition: "all 0.3s",
 
     "&:hover": {
-        transform: trn || "scale(1.03)",
+        transform: trn || "scale(1.02)",
     },
 }));
 

@@ -7,8 +7,8 @@ function Row1({ groupCount }) {
         <>
             <DashboardBox gridArea="b"></DashboardBox>
             <DashboardBox gridArea="c">
-                <BoxHeader title="Cities with more than 3 Contacts" />
-                <CustomPieChart dataCount={groupCount} />
+                <BoxHeader title="Percentage of Patients in Each Group" />
+                <CustomPieChart dataCount={groupCount} isPercentage={true} />
             </DashboardBox>
         </>
     );

@@ -1,16 +1,19 @@
-import { takeLatest, call } from "redux-saga/effects";
-import { DASHBOARD_ACTION_TYPE } from "@/redux/actions/dashboardAction";
+import { takeLatest, call, put } from "redux-saga/effects";
+import {
+    REQUEST_DASHBOARD_DATA_TYPE,
+    responseDashboardAction,
+} from "@/redux/actions/dashboardAction";
 import axiosClient from "../../axios-client";
 
 function* dashboardSagaWorker() {
     try {
         const response = yield call(axiosClient.get, "/patients");
-        console.log("hello world from dashboard", response);
+        yield put(responseDashboardAction(response));
     } catch (error) {
         console.log(error);
     }
 }
 
 export function* watchDashboardSaga() {
-    yield takeLatest(DASHBOARD_ACTION_TYPE, dashboardSagaWorker);
+    yield takeLatest(REQUEST_DASHBOARD_DATA_TYPE, dashboardSagaWorker);
 }

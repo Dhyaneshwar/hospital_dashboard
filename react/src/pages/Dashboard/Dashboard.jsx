@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { getDashboardDataSelector } from "../../redux/selectors/dashboardSelector";
 import {
-    dashboardAction,
+    requestDashboardAction,
     resetDashboardAction,
 } from "../../redux/actions/dashboardAction";
 import DashboardContainer from "../../utils/DashboardContainer";
@@ -60,7 +60,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = {
-    fetchDashboardData: dashboardAction,
+    fetchDashboardData: requestDashboardAction,
     resetDashboard: resetDashboardAction,
 };
 
